@@ -1,0 +1,56 @@
+/* Estilo para el cuerpo */
+body {
+  background: url("../img/micro.webp") no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Título de la página */
+#tune-trip-header {
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.walterblanco{
+  color: #ffffff;
+}
+
+/* Estilos de las tarjetas */
+.card {
+  background: #ffffff;
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de los botones */
+.btn-primary {
+  background-color: #6c5ce7;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #5a4fe2;
+}
+
+/* Estilo para los mensajes de error */
+.alert-danger {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* Ajustes para el footer o cualquier otra parte de la interfaz */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a2e;
+}
