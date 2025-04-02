@@ -33,13 +33,21 @@ body {
 
 /* Estilo de los botones */
 .btn-primary {
-  background-color: #6c5ce7;
+  background-color: #2C3E50;
   border: none;
   font-weight: bold;
 }
 
 .btn-primary:hover {
-  background-color: #5a4fe2;
+  background-color: #3d5265;
+}
+.btn-secondary {
+  background-color: #008736;
+  border: none;
+  font-weight: bold;
+}
+.btn-secondary:hover {
+  background-color: #00bf4c;
 }
 
 /* Estilo para los mensajes de error */

@@ -44,7 +44,7 @@
   
       <!-- Botones a la derecha -->
       <div class="col-md-6 pacentrar">
-        <a href="{{ artist_info.external_urls.spotify }}" target="_blank" class="btn btn-success me-2">🎧 Listen on Spotify</a>
+        <a href="{{ artist_info.external_urls.spotify }}" target="_blank" class="btn btn-secondary me-2">🎧 Listen on Spotify</a>
         {% if artist_info.playlist %}
           <a href="{{ artist_info.playlist.external_urls.spotify }}" target="_blank" class="btn btn-primary">🎵 Recommended Playlist</a>
         {% endif %}
@@ -68,7 +68,7 @@
               
               <!-- Botón para redirigir a Google Maps -->
               {% if event.location.lat and event.location.lng %}
-                <a href="https://www.google.com/maps?q={{ event.location.lat }},{{ event.location.lng }}" target="_blank" class="btn btn-sm btn-success mt-2">
+                <a href="https://www.google.com/maps?q={{ event.location.lat }},{{ event.location.lng }}" target="_blank" class="btn btn-sm btn-secondary mt-2">
                   Look on Google Maps
                 </a>
               {% endif %}
@@ -97,7 +97,7 @@
             <p class="walterblanco"><strong>Album:</strong> {{ track.album.name }}</p>
   
             <!-- Botón para escuchar en Spotify -->
-            <a href="{{ track.external_urls.spotify }}" target="_blank" class="btn btn-sm btn-success mt-auto">🎵 Listen</a>
+            <a href="{{ track.external_urls.spotify }}" target="_blank" class="btn btn-sm btn-secondary mt-auto">🎵 Listen</a>
           </div>
         </div>
       {% endfor %}
