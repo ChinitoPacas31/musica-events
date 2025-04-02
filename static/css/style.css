@@ -19,10 +19,11 @@ body {
 
 /* Estilos de las tarjetas */
 .card {
-  background: #ffffff;
+  background: #000000;
   border: none;
   border-radius: 15px;
   transition: transform 0.3s, box-shadow 0.3s;
+  
 }
 
 .card:hover {
@@ -53,4 +54,23 @@ footer {
   text-align: center;
   padding: 20px;
   background-color: #1a1a2e;
+}
+/* Ajustar imagen del artista */
+.artist-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.pacentrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Ajustar tamaño de la imagen del álbum en top tracks */
+.album-img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
 }
