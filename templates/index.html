@@ -15,7 +15,7 @@
       <a class="navbar-brand" href="">
         <img src="{{ url_for('static', filename='img/logo.png') }}" alt="TuneTrip Logo" height="75" position="absolute">
       </a>
-      <span class="text-white fw-bold" style="font-size: 1.75rem; transform: translateX(-125%);">Your musical trip starts now</span>
+      <span class="text-white fw-bold" style="font-size: 1.75rem; transform: translateX(-125%);"><!--Your musical trip starts now--></span>
     </div>
   </nav>
 
@@ -23,8 +23,8 @@
     <!-- Búsqueda -->
     <form method="POST" class="row justify-content-center mb-5">
       <div class="col-md-6">
-        <input name="artista" type="text" class="form-control" placeholder="Artist Name" required>
-        <button type="submit" class="btn btn-primary mt-2 w-100">Search Concerts</button>
+        <input id="artistName" name="artista" type="text" class="form-control" placeholder="Artist Name" required>
+        <button type="submit" id="buttonSearch" class="btn btn-primary mt-2 w-100">Search Concerts</button>
       </div>
     </form>
 
@@ -44,7 +44,7 @@
   
       <!-- Botones a la derecha -->
       <div class="col-md-6 pacentrar">
-        <a href="{{ artist_info.external_urls.spotify }}" target="_blank" class="btn btn-secondary me-2">🎧 Listen on Spotify</a>
+        <a href="{{ artist_info.external_urls.spotify }}" target="_blank" id="buttonSpotify" class="btn btn-secondary me-2">🎧 Listen on Spotify</a>
         {% if artist_info.playlist %}
           <a href="{{ artist_info.playlist.external_urls.spotify }}" target="_blank" class="btn btn-primary">🎵 Recommended Playlist</a>
         {% endif %}
